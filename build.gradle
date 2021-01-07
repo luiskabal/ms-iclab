@@ -5,6 +5,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+	id 'org.springframework.boot' version '2.3.3.RELEASE'
 }
 
 repositories {
@@ -33,6 +34,10 @@ group = 'com.devopsusach2020'
 version = '0.0.1'
 description = 'DevOpsUsach2020'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+test {
+    useJUnitPlatform()
+}
 
 publishing {
     publications {
