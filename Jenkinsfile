@@ -1,3 +1,2 @@
-library 'pipeline@dev'
-
-pipe.call()
+library ('pipeline')
+ejecucion.call()
