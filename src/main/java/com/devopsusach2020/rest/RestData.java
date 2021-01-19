@@ -22,7 +22,6 @@ public class RestData {
 	
 	private final static Logger LOGGER = Logger.getLogger("devops.subnivel.Control");
 
-	
 	@GetMapping(path = "/test", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Pais getData(@RequestParam(name = "msg") String message){
 		
@@ -33,8 +32,7 @@ public class RestData {
 		return response;
 	}
 	
-
-	@GetMapping(path = "/estadoMundial", produces = MediaType.APPLICATION_JSON_VALUE)
+@GetMapping(path = "/estadoMundial", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Mundial getTotalMundial(){
 		
 		LOGGER.log(Level.INFO, "Consulta mundial");
